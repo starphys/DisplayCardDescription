@@ -15,9 +15,14 @@ public class Main {
         JButton button = new JButton("Submit");
         JTextField input = new JTextField(3);
         JLabel prompt = new JLabel("Enter a card:");
-        JTextField description = new JTextField(30);
+        JLabel instructions = new JLabel("""
+        <html>Enter a card by rank and suit to get its description.<br>
+        Accepted formats are RS or RRS, as in AH for Ace of Hearts or 10C for Ten of Clubs. </html>""");
+        JTextField description = new JTextField(3);
         description.setEditable(false);
 
+
+        panel.add(instructions, BorderLayout.NORTH);
         panel.add(prompt, BorderLayout.WEST);
         panel.add(input, BorderLayout.CENTER);
         panel.add(button, BorderLayout.EAST);
