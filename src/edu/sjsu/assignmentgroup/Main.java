@@ -1,13 +1,12 @@
 package edu.sjsu.assignmentgroup;
 
 import javax.swing.*;
-import javax.swing.border.Border;
+
 import java.awt.*;
 
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
         JFrame frame = new JFrame("Playing Card Reader");
         JPanel panel = new JPanel(new BorderLayout());
         frame.add(panel);

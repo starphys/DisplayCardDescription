@@ -6,7 +6,7 @@ public class Card {
     private static final String UNKNOWN = "Unknown";
 
     public Card(String suitRank) {
-        //Assume input is always valid
+        //Validate all input
         if (suitRank.length() > 3 || suitRank.length() < 2) {
             this.suitRank = UNKNOWN;
         } else {
